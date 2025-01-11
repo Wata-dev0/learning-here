@@ -67,6 +67,8 @@ input::placeholder {
     cursor: pointer;
 }
 
+
+
 .login-container button:hover {
     background-color: var(--green-dark);
 }
@@ -79,3 +81,4 @@ a {
 a:hover {
     color: var(--comment);
 }
+
