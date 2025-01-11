@@ -3,18 +3,17 @@ const router = express.Router()
 const user = require('../../models/user')
 
 
+
 router.use(express.json())
 
-const testData = []
+router.get('/users', async (req, res) => {
 
-router.get('/users', (req, res) => {
-    res.json(testData)
-    console.log(JSON.stringify(testData))
 });
 
 router.post('/users', (req, res) => {
     const data = req.body
-    testData.push(data)
+    user.create(data)
+
     res.json(data)
     console.log(JSON.stringify(data))
 });
